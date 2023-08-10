@@ -1,0 +1,782 @@
+<%- include('../header');%>
+<body>
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <!-- Menu Navigasi Side-->
+      <%- include('menuNav');%>
+      <!-- End Menu Navigasi Side-->
+      <!-- Menu Navigasi Side-->
+      <%- include('topNavBar');%>
+      <!-- End Menu Navigasi Side-->
+      <!-- Content wrapper -->
+    <div class="content-wrapper">
+      <!-- Content -->
+
+      <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="row">
+          <div class="col-lg-8 mb-4 order-0">
+            <div class="card">
+              <div class="d-flex align-items-end row">
+                <div class="col-sm-7">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">Assallammuallaikum <%= namaPengguna %> ! 🎉</h5>
+                    <p class="mb-4">
+                      Anda sudah memiliki <span class="fw-bold">72%</span> data yang diperlukan sekolah. Mari kita tinjau perkembangan sekolah kita.
+                    </p>
+
+                    <a href="/underConstruction" class="btn btn-sm btn-outline-primary">Lihat Lengkap</a>
+                  </div>
+                </div>
+                <div class="col-sm-5 text-center text-sm-left">
+                  <div class="card-body pb-0 px-0 px-md-4">
+                    <img
+                      src="../assets/img/illustrations/man-with-laptop-light.png"
+                      height="140"
+                      alt="View Badge User"
+                      data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                      data-app-light-img="illustrations/man-with-laptop-light.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 order-1">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                      <div class="avatar flex-shrink-0">
+                        <img
+                          src="../assets/img/icons/unicons/students.png"
+                          alt="Peserta Didik"
+                          class="rounded"
+                        />
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="cardOpt3"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
+                          <a class="dropdown-item" href="javascript:void(0);">Lihat Lengkap</a>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Peserta Didik <%= tahunAjaran %></span>
+                    <h3 class="card-title mb-2">794</h3>
+                    <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +240 Orang</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                      <div class="avatar flex-shrink-0">
+                        <img
+                          src="../assets/img/icons/unicons/congratulation.png"
+                          alt="Lulusan"
+                          class="rounded"
+                        />
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="cardOpt6"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                          <a class="dropdown-item" href="javascript:void(0);">Lihat Lengkap</a>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Lulusan <%=tahunLulusan%></span> 
+                    <h3 class="card-title text-nowrap mb-1">4522</h3>
+                    <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +254 Orang</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pengumuman -->
+          <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+            <div class="card">
+              <div class="row row-bordered g-0">
+                <div class="col-md-12">
+                  <h5 class="card-header m-0 me-2 pb-3">Pengumuman-Pengumuman</h5>
+                  <div class="nav-align-top mb-2">
+                    <ul class="nav nav-pills mb-3 nav-fill" role="tablist">
+                      <li class="nav-item">
+                        <button
+                          type="button"
+                          class="nav-link active"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#navs-pills-justified-tataUsaha"
+                          aria-controls="navs-pills-justified-tataUsaha"
+                          aria-selected="true"
+                        >
+                          <i class="tf-icons bx bx-podcast"></i> Tata Usaha
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          type="button"
+                          class="nav-link"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#navs-pills-justified-kurikulum"
+                          aria-controls="navs-pills-justified-kurikulum"
+                          aria-selected="false"
+                        >
+                          <i class="tf-icons bx bx-book-content"></i> Kurikulum
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          type="button"
+                          class="nav-link"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#navs-pills-justified-kesiswaan"
+                          aria-controls="navs-pills-justified-kesiswaan"
+                          aria-selected="false"
+                        >
+                          <i class="tf-icons bx bx-face"></i> Kesiswaan
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          type="button"
+                          class="nav-link"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#navs-pills-justified-hubin"
+                          aria-controls="navs-pills-justified-hubin"
+                          aria-selected="false"
+                        >
+                          <i class="tf-icons bx bx-directions"></i> Hubin
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button
+                          type="button"
+                          class="nav-link"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#navs-pills-justified-sarpras"
+                          aria-controls="navs-pills-justified-sarpras"
+                          aria-selected="false"
+                        >
+                          <i class="tf-icons bx bx-spa"></i> Sarpras
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane fade show active" id="navs-pills-justified-tataUsaha" role="tabpanel">
+                        <p>
+                          <!-- Paragraf 1 -->
+                          <%= pengumumanTatausaha %>
+                        </p>
+                        <p class="mb-0">
+                          <!-- Paragraf 2 -->
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="navs-pills-justified-kurikulum" role="tabpanel">
+                        <p>
+                          <!-- Paragraf 1 -->
+                          <%= pengumumanKurikulum %>
+                        </p>
+                        <p class="mb-0">
+                          <!-- Paragraf 2 -->
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="navs-pills-justified-kesiswaan" role="tabpanel">
+                        <p>
+                          <!-- Paragraf 1 -->
+                          <%= pengumumanKesiswaan %>
+                        </p>
+                        <p class="mb-0">
+                          <!-- Paragraf 2 -->
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="navs-pills-justified-hubin" role="tabpanel">
+                        <p>
+                          <!-- Paragraf 1 -->
+                          <%= pengumumanHubin %>
+                        </p>
+                        <p class="mb-0">
+                          <!-- Paragraf 2 -->
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="navs-pills-justified-sarpras" role="tabpanel">
+                        <p>
+                          <!-- Paragraf 1 -->
+                          <%= pengumumanSarpras %>
+                        </p>
+                        <p class="mb-0">
+                          <!-- Paragraf 2 -->
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ Total Revenue -->
+          <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
+            <div class="row">
+              <div class="col-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                      <div class="avatar flex-shrink-0">
+                        <img src="../assets/img/icons/unicons/triangle.png" alt="Credit Card" class="rounded" />
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="cardOpt4"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
+                          <a class="dropdown-item" href="javascript:void(0);">Lihat Lengkap</a>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Partisipasi Ekskul</span> 
+                    <h3 class="card-title text-nowrap mb-2">32,87%</h3>
+                    <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> -5.82%</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                      <div class="avatar flex-shrink-0">
+                        <img src="../assets/img/icons/unicons/agreement.png" alt="Credit Card" class="rounded" />
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="cardOpt1"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="cardOpt1">
+                          <a class="dropdown-item" href="javascript:void(0);">Lihat Lengkap</a>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="fw-semibold d-block mb-1">Nota Kesepahaman</span>
+                    <h3 class="card-title mb-2">24 DUDI</h3>
+                    <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +8 DU/DI</small>
+                  </div>
+                </div>
+              </div>
+              <!-- </div>
+<div class="row"> -->
+                  <div class="col-12 mb-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+                          <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                            <div class="card-title">
+                              <h5 class="text-nowrap mb-2">Total Tunggakan</h5>
+                              <span class="badge bg-label-warning rounded-pill">Year 2023</span>
+                            </div>
+                            <div class="mt-sm-auto">
+                              <small class="text-danger text-nowrap fw-semibold"
+                                ><i class="bx bx-chevron-up"></i>Naik 0,92%</small
+                              >
+                              <h3 class="mb-0">500.686K</h3>
+                            </div>
+                          </div>
+                          <div id="profileReportChart"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Order Statistics -->
+              <div class="col-md-6 col-lg-4 col-xl-4 order-0 mb-4">
+                <div class="card h-100">
+                  <div class="card-header d-flex align-items-center justify-content-between pb-0">
+                    <div class="card-title mb-0">
+                      <h5 class="m-0 me-2">Data GTK</h5>
+                      <small class="text-muted">SMK PUSDIKHUBAD CIMAHI</small>
+                    </div>
+                    <div class="dropdown">
+                      <button
+                        class="btn p-0"
+                        type="button"
+                        id="orederStatistics"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <i class="bx bx-dots-vertical-rounded"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orederStatistics">
+                        <a class="dropdown-item" href="javascript:void(0);">Select All</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Share</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <div class="d-flex flex-column align-items-center gap-1">
+                        <h2 class="mb-2">- 62 -</h2>
+                        <span>Guru dan Tenaga Kependidikan</span>
+                      </div>
+                      <div id="orderStatisticsChart"></div>
+                    </div>
+                    <ul class="p-0 m-0">
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-primary"
+                            ><i class="bx bx-heart-circle"></i
+                          ></span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Magister</h6>
+                            <small class="text-muted">Strata 2 (S2)</small>
+                          </div>
+                          <div class="user-progress">
+                            <small class="fw-semibold">3 Orang</small>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-success"><i class="bx bx-heart-square"></i></span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Sarjana</h6>
+                            <small class="text-muted">Strata 1 (S1/D4)</small>
+                          </div>
+                          <div class="user-progress">
+                            <small class="fw-semibold">45 Orang</small>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-info"><i class="bx bx-heart-circle"></i></span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">SMA/SMK</h6>
+                            <small class="text-muted">Menengah Atas</small>
+                          </div>
+                          <div class="user-progress">
+                            <small class="fw-semibold">10 Orang</small>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-secondary"
+                            ><i class="bx bx-heart-square"></i
+                          ></span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">SMP/MA</h6>
+                            <small class="text-muted">Menengah Pertama</small>
+                          </div>
+                          <div class="user-progress">
+                            <small class="fw-semibold">4 Orang</small>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--/ Order Statistics -->
+
+              <!-- Kompetensi GTK 1 -->
+              <div class="col-md-6 col-lg-4 order-2 mb-4">
+                <div class="card h-100">
+                  <div class="card-header d-flex align-items-center justify-content-between">
+                    <h5 class="card-title m-0 me-2">Kompetensi GTK</h5>
+                    <div class="dropdown">
+                      <button
+                        class="btn p-0"
+                        type="button"
+                        id="transactionID"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <i class="bx bx-dots-vertical-rounded"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
+                        <a class="dropdown-item" href="javascript:void(0);">Last 28 Days</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Last Year</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul class="p-0 m-0">
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <img src="../assets/img/icons/unicons/certificate.png" alt="User" class="rounded" />
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Sertifikat Pendidik</h6>
+                            <div class="progress mb-1">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                                role="progressbar"
+                                style="width: 10%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="user-progress d-flex align-items-center gap-1">
+                            <h6 class="mb-0">10</h6>
+                            <span class="text-muted">%</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <img src="../assets/img/icons/unicons/diagram.png" alt="User" class="rounded" />
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Linieritas Pendidik</h6>
+                            <div class="progress mb-1">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                role="progressbar"
+                                style="width: 82%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="user-progress d-flex align-items-center gap-1">
+                            <h6 class="mb-0">82</h6>
+                            <span class="text-muted">%</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <img src="../assets/img/icons/unicons/creative-teaching.png" alt="User" class="rounded" />
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Perangkat Pembelajaran</h6>
+                            <div class="progress mb-1">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                role="progressbar"
+                                style="width: 67%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="user-progress d-flex align-items-center gap-1">
+                            <h6 class="mb-0">67</h6>
+                            <span class="text-muted">%</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <img src="../assets/img/icons/unicons/attendance.png" alt="User" class="rounded" />
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Kehadiran Pendidik</h6>
+                            <div class="progress mb-1">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                role="progressbar"
+                                style="width: 67%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="user-progress d-flex align-items-center gap-1">
+                            <h6 class="mb-0">86</h6>
+                            <span class="text-muted">%</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <img src="../assets/img/icons/unicons/behavior.png" alt="User" class="rounded" />
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Assesmen HOTS</h6>
+                            <div class="progress mb-1">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                role="progressbar"
+                                style="width: 43%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="user-progress d-flex align-items-center gap-1">
+                            <h6 class="mb-0">43</h6>
+                            <span class="text-muted">%</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <img src="../assets/img/icons/unicons/laptop-screen.png" alt="User" class="rounded" />
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Media Pembelajaran</h6>
+                            <div class="progress mb-1">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                                role="progressbar"
+                                style="width: 76%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="user-progress d-flex align-items-center gap-1">
+                            <h6 class="mb-0">76</h6>
+                            <span class="text-muted">%</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--/ Kompetensi GTK -->
+
+              <!-- Kompetensi GTK 2 -->
+              <div class="col-md-6 col-lg-4 order-2 mb-4">
+                <div class="card h-100">
+                  <div class="card-header d-flex align-items-center justify-content-between">
+                    <h5 class="card-title m-0 me-2">Kompetensi GTK</h5>
+                    <div class="dropdown">
+                      <button
+                        class="btn p-0"
+                        type="button"
+                        id="transactionID"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <i class="bx bx-dots-vertical-rounded"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
+                        <a class="dropdown-item" href="javascript:void(0);">Last 28 Days</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Last Year</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul class="p-0 m-0">
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <img src="../assets/img/icons/unicons/teacher.png" alt="User" class="rounded" />
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Penguasaan Kelas</h6>
+                            <div class="progress mb-1">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                role="progressbar"
+                                style="width: 91%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="user-progress d-flex align-items-center gap-1">
+                            <h6 class="mb-0">91</h6>
+                            <span class="text-muted">%</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <img src="../assets/img/icons/unicons/talking.png" alt="User" class="rounded" />
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Berkomunikasi : Baik</h6>
+                            <div class="progress mb-1">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                role="progressbar"
+                                style="width: 78%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="user-progress d-flex align-items-center gap-1">
+                            <h6 class="mb-0">78</h6>
+                            <span class="text-muted">%</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <img src="../assets/img/icons/unicons/collaboration.png" alt="User" class="rounded" />
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Berkolaboriasi : Baik</h6>
+                            <div class="progress mb-1">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                                role="progressbar"
+                                style="width: 42%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="user-progress d-flex align-items-center gap-1">
+                            <h6 class="mb-0">42</h6>
+                            <span class="text-muted">%</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <img src="../assets/img/icons/unicons/mindset.png" alt="User" class="rounded" />
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Berfikir Kritis : Baik</h6>
+                            <div class="progress mb-1">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                                role="progressbar"
+                                style="width: 86%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="user-progress d-flex align-items-center gap-1">
+                            <h6 class="mb-0">86</h6>
+                            <span class="text-muted">%</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <img src="../assets/img/icons/unicons/design-thinking.png" alt="User" class="rounded" />
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Berkreasi : Baik</h6>
+                            <div class="progress mb-1">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                role="progressbar"
+                                style="width: 43%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="user-progress d-flex align-items-center gap-1">
+                            <h6 class="mb-0">43</h6>
+                            <span class="text-muted">%</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <img src="../assets/img/icons/unicons/difficulties.png" alt="User" class="rounded" />
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Bercatatan Khusus</h6>
+                            <div class="progress mb-1">
+                              <div
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                role="progressbar"
+                                style="width: 12%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="user-progress d-flex align-items-center gap-1">
+                            <h6 class="mb-0">12</h6>
+                            <span class="text-muted">%</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--/ Kompetensi GTK -->
+            </div>
+          </div>
+          <!-- / Content -->
+<%- include('../footer');%>
